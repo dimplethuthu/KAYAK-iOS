@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB4BB5332BB29DCE0090BD50 /* FlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB5322BB29DCE0090BD50 /* FlightModel.swift */; };
+		FB4BB5362BB29E700090BD50 /* DealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB5352BB29E700090BD50 /* DealModel.swift */; };
+		FB4BB53A2BB2A6120090BD50 /* RegionSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB5382BB2A6120090BD50 /* RegionSelectionCell.swift */; };
+		FB4BB53B2BB2A6120090BD50 /* RegionSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4BB5392BB2A6120090BD50 /* RegionSelectionCell.xib */; };
+		FB4BB53E2BB2A6BC0090BD50 /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB53D2BB2A6BC0090BD50 /* RegionModel.swift */; };
+		FB4BB5432BB2B9EA0090BD50 /* FlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB5422BB2B9EA0090BD50 /* FlightsVC.swift */; };
+		FB4BB5462BB2BADB0090BD50 /* FlightSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB5452BB2BADB0090BD50 /* FlightSelectionVC.swift */; };
+		FB4BB5492BB2C0230090BD50 /* AgencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB5482BB2C0230090BD50 /* AgencyVC.swift */; };
+		FB4BB54B2BB2C5120090BD50 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB54A2BB2C5120090BD50 /* NotificationVC.swift */; };
+		FB4BB54E2BB2C74B0090BD50 /* GuideAgencyWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BB54D2BB2C74B0090BD50 /* GuideAgencyWebViewVC.swift */; };
+		FB5C37A22BB32AE6001077D9 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C37A12BB32AE6001077D9 /* View+Extension.swift */; };
+		FB5C37A52BB342D4001077D9 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C37A42BB342D4001077D9 /* Button+Extension.swift */; };
+		FB5C38152BC3C95D001077D9 /* AgencyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38142BC3C95D001077D9 /* AgencyVM.swift */; };
+		FB5C38172BC3C96B001077D9 /* FlightSelectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38162BC3C96B001077D9 /* FlightSelectionVM.swift */; };
+		FB5C38192BC3C989001077D9 /* FlightsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38182BC3C989001077D9 /* FlightsVM.swift */; };
+		FB5C381B2BC3C992001077D9 /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C381A2BC3C992001077D9 /* OnboardingVM.swift */; };
+		FB5C381D2BC3C9A6001077D9 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C381C2BC3C9A6001077D9 /* LoginVM.swift */; };
+		FB5C38232BC3C9D3001077D9 /* SignUpConfirmVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38222BC3C9D3001077D9 /* SignUpConfirmVM.swift */; };
+		FB5C38262BC3C9E8001077D9 /* NotificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38252BC3C9E8001077D9 /* NotificationVM.swift */; };
+		FB5C38282BC3C9FA001077D9 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38272BC3C9FA001077D9 /* HomeVM.swift */; };
+		FB5C382B2BC3D2B8001077D9 /* FlightDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C382A2BC3D2B8001077D9 /* FlightDataSource.swift */; };
+		FB5C382D2BC3D2C6001077D9 /* RegionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C382C2BC3D2C6001077D9 /* RegionDataSource.swift */; };
+		FB5C382F2BC3D2D4001077D9 /* DealDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C382E2BC3D2D4001077D9 /* DealDataSource.swift */; };
+		FB5C38312BC3D2F5001077D9 /* HomeFlightDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38302BC3D2F5001077D9 /* HomeFlightDataSource.swift */; };
+		FB5C38332BC3D30B001077D9 /* FlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38322BC3D30B001077D9 /* FlightRepository.swift */; };
+		FB5C38352BC3D319001077D9 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38342BC3D319001077D9 /* RegionRepository.swift */; };
+		FB5C38372BC3D32B001077D9 /* DealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38362BC3D32B001077D9 /* DealRepository.swift */; };
+		FB5C38392BC3D34C001077D9 /* HomeFlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C38382BC3D34C001077D9 /* HomeFlightRepository.swift */; };
+		FB5C383C2BC3E418001077D9 /* FlightSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C383B2BC3E418001077D9 /* FlightSelectionModel.swift */; };
+		FB5C385E2BC40E18001077D9 /* EmailFormVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C385D2BC40E18001077D9 /* EmailFormVM.swift */; };
+		FBC332F52BB16B1D00999F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC332F42BB16B1D00999F3A /* AppDelegate.swift */; };
+		FBC332F72BB16B1D00999F3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC332F62BB16B1D00999F3A /* SceneDelegate.swift */; };
+		FBC332F92BB16B1D00999F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC332F82BB16B1D00999F3A /* ViewController.swift */; };
+		FBC332FC2BB16B1D00999F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC332FA2BB16B1D00999F3A /* Main.storyboard */; };
+		FBC332FE2BB16B1E00999F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC332FD2BB16B1E00999F3A /* Assets.xcassets */; };
+		FBC333012BB16B1E00999F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC332FF2BB16B1E00999F3A /* LaunchScreen.storyboard */; };
+		FBC333102BB16C4E00999F3A /* RootNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3330F2BB16C4E00999F3A /* RootNC.swift */; };
+		FBC333132BB16C7E00999F3A /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333122BB16C7E00999F3A /* TabBarVC.swift */; };
+		FBC333152BB16CB800999F3A /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC333142BB16CB800999F3A /* Auth.storyboard */; };
+		FBC333172BB16CBD00999F3A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC333162BB16CBD00999F3A /* Home.storyboard */; };
+		FBC3331A2BB16CFB00999F3A /* HomeSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333192BB16CFB00999F3A /* HomeSearchVC.swift */; };
+		FBC3331C2BB16D2900999F3A /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3331B2BB16D2900999F3A /* ExploreVC.swift */; };
+		FBC3331E2BB16EE000999F3A /* TripsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3331D2BB16EE000999F3A /* TripsVC.swift */; };
+		FBC333202BB16EF100999F3A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3331F2BB16EF100999F3A /* ProfileVC.swift */; };
+		FBC333272BB16F4200999F3A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333262BB16F4200999F3A /* LoginVC.swift */; };
+		FBC333292BB16F6100999F3A /* EmailFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333282BB16F6100999F3A /* EmailFormVC.swift */; };
+		FBC3332B2BB16F6A00999F3A /* SignupConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3332A2BB16F6A00999F3A /* SignupConfirmationVC.swift */; };
+		FBC3333B2BB16FDA00999F3A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3332D2BB16FDA00999F3A /* Date.swift */; };
+		FBC3333C2BB16FDA00999F3A /* Doble.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3332E2BB16FDA00999F3A /* Doble.swift */; };
+		FBC3333D2BB16FDA00999F3A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3332F2BB16FDA00999F3A /* String.swift */; };
+		FBC3333E2BB16FDA00999F3A /* TableVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333322BB16FDA00999F3A /* TableVew.swift */; };
+		FBC3333F2BB16FDA00999F3A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333342BB16FDA00999F3A /* CollectionViewCell.swift */; };
+		FBC333402BB16FDA00999F3A /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333362BB16FDA00999F3A /* CollectionView.swift */; };
+		FBC333412BB16FDA00999F3A /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333382BB16FDA00999F3A /* TextField.swift */; };
+		FBC333422BB16FDA00999F3A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3333A2BB16FDA00999F3A /* TableViewCell.swift */; };
+		FBC333452BB16FFE00999F3A /* StoryBoardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333442BB16FFE00999F3A /* StoryBoardHelper.swift */; };
+		FBC333472BB1896300999F3A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC333462BB1896300999F3A /* Onboarding.storyboard */; };
+		FBC3334A2BB1899300999F3A /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333492BB1899300999F3A /* OnboardingVC.swift */; };
+		FBC333502BB274FF00999F3A /* HomeSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3334E2BB274FF00999F3A /* HomeSearchCell.swift */; };
+		FBC333512BB274FF00999F3A /* HomeSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC3334F2BB274FF00999F3A /* HomeSearchCell.xib */; };
+		FBC333552BB2755C00999F3A /* FlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC333532BB2755C00999F3A /* FlightCell.swift */; };
+		FBC333562BB2755C00999F3A /* FlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC333542BB2755C00999F3A /* FlightCell.xib */; };
+		FBC3335C2BB275BD00999F3A /* DealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3335A2BB275BD00999F3A /* DealsTableViewCell.swift */; };
+		FBC3335D2BB275BD00999F3A /* DealsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC3335B2BB275BD00999F3A /* DealsTableViewCell.xib */; };
+		FBC333602BB292EC00999F3A /* HomeFlightGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3335F2BB292EC00999F3A /* HomeFlightGuideModel.swift */; };
+		FBFFF56E2BB2FE37009A71E5 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFFF56C2BB2FE37009A71E5 /* EmptyCell.swift */; };
+		FBFFF56F2BB2FE37009A71E5 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFFF56D2BB2FE37009A71E5 /* EmptyCell.xib */; };
+		FBFFF5722BB3007A009A71E5 /* DynamicTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFFF5712BB3007A009A71E5 /* DynamicTV.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB4BB5322BB29DCE0090BD50 /* FlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightModel.swift; sourceTree = "<group>"; };
+		FB4BB5352BB29E700090BD50 /* DealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealModel.swift; sourceTree = "<group>"; };
+		FB4BB5382BB2A6120090BD50 /* RegionSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectionCell.swift; sourceTree = "<group>"; };
+		FB4BB5392BB2A6120090BD50 /* RegionSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionSelectionCell.xib; sourceTree = "<group>"; };
+		FB4BB53D2BB2A6BC0090BD50 /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
+		FB4BB5422BB2B9EA0090BD50 /* FlightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsVC.swift; sourceTree = "<group>"; };
+		FB4BB5452BB2BADB0090BD50 /* FlightSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSelectionVC.swift; sourceTree = "<group>"; };
+		FB4BB5482BB2C0230090BD50 /* AgencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyVC.swift; sourceTree = "<group>"; };
+		FB4BB54A2BB2C5120090BD50 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		FB4BB54D2BB2C74B0090BD50 /* GuideAgencyWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideAgencyWebViewVC.swift; sourceTree = "<group>"; };
+		FB5C37A12BB32AE6001077D9 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		FB5C37A42BB342D4001077D9 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
+		FB5C38142BC3C95D001077D9 /* AgencyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyVM.swift; sourceTree = "<group>"; };
+		FB5C38162BC3C96B001077D9 /* FlightSelectionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSelectionVM.swift; sourceTree = "<group>"; };
+		FB5C38182BC3C989001077D9 /* FlightsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsVM.swift; sourceTree = "<group>"; };
+		FB5C381A2BC3C992001077D9 /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
+		FB5C381C2BC3C9A6001077D9 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		FB5C38222BC3C9D3001077D9 /* SignUpConfirmVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfirmVM.swift; sourceTree = "<group>"; };
+		FB5C38252BC3C9E8001077D9 /* NotificationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVM.swift; sourceTree = "<group>"; };
+		FB5C38272BC3C9FA001077D9 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		FB5C382A2BC3D2B8001077D9 /* FlightDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataSource.swift; sourceTree = "<group>"; };
+		FB5C382C2BC3D2C6001077D9 /* RegionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDataSource.swift; sourceTree = "<group>"; };
+		FB5C382E2BC3D2D4001077D9 /* DealDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDataSource.swift; sourceTree = "<group>"; };
+		FB5C38302BC3D2F5001077D9 /* HomeFlightDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightDataSource.swift; sourceTree = "<group>"; };
+		FB5C38322BC3D30B001077D9 /* FlightRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRepository.swift; sourceTree = "<group>"; };
+		FB5C38342BC3D319001077D9 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
+		FB5C38362BC3D32B001077D9 /* DealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealRepository.swift; sourceTree = "<group>"; };
+		FB5C38382BC3D34C001077D9 /* HomeFlightRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightRepository.swift; sourceTree = "<group>"; };
+		FB5C383B2BC3E418001077D9 /* FlightSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSelectionModel.swift; sourceTree = "<group>"; };
+		FB5C385D2BC40E18001077D9 /* EmailFormVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFormVM.swift; sourceTree = "<group>"; };
+		FBC332F12BB16B1D00999F3A /* KAYAKAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAYAKAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC332F42BB16B1D00999F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBC332F62BB16B1D00999F3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBC332F82BB16B1D00999F3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBC332FB2BB16B1D00999F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBC332FD2BB16B1E00999F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBC333002BB16B1E00999F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBC333022BB16B1E00999F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC3330F2BB16C4E00999F3A /* RootNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNC.swift; sourceTree = "<group>"; };
+		FBC333122BB16C7E00999F3A /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		FBC333142BB16CB800999F3A /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		FBC333162BB16CBD00999F3A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FBC333192BB16CFB00999F3A /* HomeSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchVC.swift; sourceTree = "<group>"; };
+		FBC3331B2BB16D2900999F3A /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
+		FBC3331D2BB16EE000999F3A /* TripsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsVC.swift; sourceTree = "<group>"; };
+		FBC3331F2BB16EF100999F3A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		FBC333262BB16F4200999F3A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FBC333282BB16F6100999F3A /* EmailFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFormVC.swift; sourceTree = "<group>"; };
+		FBC3332A2BB16F6A00999F3A /* SignupConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConfirmationVC.swift; sourceTree = "<group>"; };
+		FBC3332D2BB16FDA00999F3A /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		FBC3332E2BB16FDA00999F3A /* Doble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doble.swift; sourceTree = "<group>"; };
+		FBC3332F2BB16FDA00999F3A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FBC333322BB16FDA00999F3A /* TableVew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableVew.swift; sourceTree = "<group>"; };
+		FBC333342BB16FDA00999F3A /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FBC333362BB16FDA00999F3A /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		FBC333382BB16FDA00999F3A /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		FBC3333A2BB16FDA00999F3A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FBC333442BB16FFE00999F3A /* StoryBoardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardHelper.swift; sourceTree = "<group>"; };
+		FBC333462BB1896300999F3A /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		FBC333492BB1899300999F3A /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		FBC3334E2BB274FF00999F3A /* HomeSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchCell.swift; sourceTree = "<group>"; };
+		FBC3334F2BB274FF00999F3A /* HomeSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSearchCell.xib; sourceTree = "<group>"; };
+		FBC333532BB2755C00999F3A /* FlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCell.swift; sourceTree = "<group>"; };
+		FBC333542BB2755C00999F3A /* FlightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightCell.xib; sourceTree = "<group>"; };
+		FBC3335A2BB275BD00999F3A /* DealsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTableViewCell.swift; sourceTree = "<group>"; };
+		FBC3335B2BB275BD00999F3A /* DealsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealsTableViewCell.xib; sourceTree = "<group>"; };
+		FBC3335F2BB292EC00999F3A /* HomeFlightGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightGuideModel.swift; sourceTree = "<group>"; };
+		FBFFF56C2BB2FE37009A71E5 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		FBFFF56D2BB2FE37009A71E5 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		FBFFF5712BB3007A009A71E5 /* DynamicTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTV.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBC332EE2BB16B1D00999F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB4BB5312BB29DC40090BD50 /* FlightModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB5322BB29DCE0090BD50 /* FlightModel.swift */,
+			);
+			path = FlightModel;
+			sourceTree = "<group>";
+		};
+		FB4BB5342BB29E6B0090BD50 /* DealModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB5352BB29E700090BD50 /* DealModel.swift */,
+			);
+			path = DealModel;
+			sourceTree = "<group>";
+		};
+		FB4BB5372BB2A5FE0090BD50 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB5382BB2A6120090BD50 /* RegionSelectionCell.swift */,
+				FB4BB5392BB2A6120090BD50 /* RegionSelectionCell.xib */,
+			);
+			path = Region;
+			sourceTree = "<group>";
+		};
+		FB4BB53C2BB2A6B20090BD50 /* RegionModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB53D2BB2A6BC0090BD50 /* RegionModel.swift */,
+			);
+			path = RegionModel;
+			sourceTree = "<group>";
+		};
+		FB4BB5412BB2B9D80090BD50 /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB5422BB2B9EA0090BD50 /* FlightsVC.swift */,
+				FB5C38182BC3C989001077D9 /* FlightsVM.swift */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		FB4BB5442BB2BACA0090BD50 /* FlightSelection */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB5452BB2BADB0090BD50 /* FlightSelectionVC.swift */,
+				FB5C38162BC3C96B001077D9 /* FlightSelectionVM.swift */,
+			);
+			path = FlightSelection;
+			sourceTree = "<group>";
+		};
+		FB4BB5472BB2C0130090BD50 /* AgencyVC */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB5482BB2C0230090BD50 /* AgencyVC.swift */,
+				FB5C38142BC3C95D001077D9 /* AgencyVM.swift */,
+			);
+			path = AgencyVC;
+			sourceTree = "<group>";
+		};
+		FB4BB54C2BB2C7320090BD50 /* WebViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB54D2BB2C74B0090BD50 /* GuideAgencyWebViewVC.swift */,
+			);
+			path = WebViewVC;
+			sourceTree = "<group>";
+		};
+		FB5C37A02BB32ADB001077D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C37A12BB32AE6001077D9 /* View+Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB5C37A32BB342CA001077D9 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C37A42BB342D4001077D9 /* Button+Extension.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		FB5C37FB2BC1A896001077D9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C38292BC3CBA3001077D9 /* Repository */,
+				FB5C37FC2BC1A8CE001077D9 /* DataSource */,
+				FBC333092BB16B3400999F3A /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB5C37FC2BC1A8CE001077D9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C382A2BC3D2B8001077D9 /* FlightDataSource.swift */,
+				FB5C382C2BC3D2C6001077D9 /* RegionDataSource.swift */,
+				FB5C382E2BC3D2D4001077D9 /* DealDataSource.swift */,
+				FB5C38302BC3D2F5001077D9 /* HomeFlightDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		FB5C381E2BC3C9AB001077D9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C381C2BC3C9A6001077D9 /* LoginVM.swift */,
+				FBC333262BB16F4200999F3A /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FB5C381F2BC3C9B4001077D9 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333282BB16F6100999F3A /* EmailFormVC.swift */,
+				FB5C385D2BC40E18001077D9 /* EmailFormVM.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		FB5C38202BC3C9BB001077D9 /* SignUpConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3332A2BB16F6A00999F3A /* SignupConfirmationVC.swift */,
+				FB5C38222BC3C9D3001077D9 /* SignUpConfirmVM.swift */,
+			);
+			path = SignUpConfirm;
+			sourceTree = "<group>";
+		};
+		FB5C38212BC3C9C3001077D9 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB54A2BB2C5120090BD50 /* NotificationVC.swift */,
+				FB5C38252BC3C9E8001077D9 /* NotificationVM.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		FB5C38292BC3CBA3001077D9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C38322BC3D30B001077D9 /* FlightRepository.swift */,
+				FB5C38342BC3D319001077D9 /* RegionRepository.swift */,
+				FB5C38362BC3D32B001077D9 /* DealRepository.swift */,
+				FB5C38382BC3D34C001077D9 /* HomeFlightRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FB5C383A2BC3E40D001077D9 /* FlightSelectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C383B2BC3E418001077D9 /* FlightSelectionModel.swift */,
+			);
+			path = FlightSelectionModel;
+			sourceTree = "<group>";
+		};
+		FBC332E82BB16B1D00999F3A = {
+			isa = PBXGroup;
+			children = (
+				FBC332F32BB16B1D00999F3A /* KAYAKAssignment */,
+				FBC332F22BB16B1D00999F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBC332F22BB16B1D00999F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC332F12BB16B1D00999F3A /* KAYAKAssignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC332F32BB16B1D00999F3A /* KAYAKAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C37FB2BC1A896001077D9 /* Data */,
+				FBFFF5702BB30062009A71E5 /* Components */,
+				FBC333182BB16CC500999F3A /* Cell */,
+				FBC333112BB16C6200999F3A /* TabBar */,
+				FBC3330E2BB16BB800999F3A /* Extension */,
+				FBC3330D2BB16B7B00999F3A /* Resources */,
+				FBC3330C2BB16B4E00999F3A /* Application */,
+				FBC3330B2BB16B4400999F3A /* View */,
+				FBC333082BB16B2F00999F3A /* Navigation */,
+				FBC333432BB16FFE00999F3A /* Constants */,
+				FBC333022BB16B1E00999F3A /* Info.plist */,
+			);
+			path = KAYAKAssignment;
+			sourceTree = "<group>";
+		};
+		FBC333082BB16B2F00999F3A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3330F2BB16C4E00999F3A /* RootNC.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FBC333092BB16B3400999F3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C383A2BC3E40D001077D9 /* FlightSelectionModel */,
+				FB4BB53C2BB2A6B20090BD50 /* RegionModel */,
+				FB4BB5342BB29E6B0090BD50 /* DealModel */,
+				FB4BB5312BB29DC40090BD50 /* FlightModel */,
+				FBC3335E2BB292CA00999F3A /* HomeFlightGuideModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBC3330A2BB16B3E00999F3A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FBC332FF2BB16B1E00999F3A /* LaunchScreen.storyboard */,
+				FBC332FA2BB16B1D00999F3A /* Main.storyboard */,
+				FBC333142BB16CB800999F3A /* Auth.storyboard */,
+				FBC333162BB16CBD00999F3A /* Home.storyboard */,
+				FBC333462BB1896300999F3A /* Onboarding.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FBC3330B2BB16B4400999F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB54C2BB2C7320090BD50 /* WebViewVC */,
+				FB4BB5472BB2C0130090BD50 /* AgencyVC */,
+				FB4BB5442BB2BACA0090BD50 /* FlightSelection */,
+				FB4BB5412BB2B9D80090BD50 /* Flights */,
+				FBC333482BB1897F00999F3A /* Onboarding */,
+				FBC332F82BB16B1D00999F3A /* ViewController.swift */,
+				FBC333252BB16F3000999F3A /* Auth */,
+				FBC333242BB16F2700999F3A /* Setting */,
+				FBC333232BB16F2000999F3A /* Trips */,
+				FBC333222BB16F1900999F3A /* Explore */,
+				FBC333212BB16F0F00999F3A /* Home */,
+				FBC3330A2BB16B3E00999F3A /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBC3330C2BB16B4E00999F3A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FBC332F42BB16B1D00999F3A /* AppDelegate.swift */,
+				FBC332F62BB16B1D00999F3A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FBC3330D2BB16B7B00999F3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBC332FD2BB16B1E00999F3A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBC3330E2BB16BB800999F3A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3332C2BB16FDA00999F3A /* Foundation */,
+				FBC333302BB16FDA00999F3A /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FBC333112BB16C6200999F3A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333122BB16C7E00999F3A /* TabBarVC.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FBC333182BB16CC500999F3A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FBFFF56B2BB2FE27009A71E5 /* EmptyCell */,
+				FB4BB5372BB2A5FE0090BD50 /* Region */,
+				FBC333572BB275A200999F3A /* Deals */,
+				FBC333522BB2754500999F3A /* Flights */,
+				FBC3334B2BB274DC00999F3A /* HomeSearch */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FBC333212BB16F0F00999F3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333192BB16CFB00999F3A /* HomeSearchVC.swift */,
+				FB5C38272BC3C9FA001077D9 /* HomeVM.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FBC333222BB16F1900999F3A /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3331B2BB16D2900999F3A /* ExploreVC.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		FBC333232BB16F2000999F3A /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3331D2BB16EE000999F3A /* TripsVC.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		FBC333242BB16F2700999F3A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3331F2BB16EF100999F3A /* ProfileVC.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FBC333252BB16F3000999F3A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C38212BC3C9C3001077D9 /* Notification */,
+				FB5C38202BC3C9BB001077D9 /* SignUpConfirm */,
+				FB5C381F2BC3C9B4001077D9 /* Email */,
+				FB5C381E2BC3C9AB001077D9 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FBC3332C2BB16FDA00999F3A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3332D2BB16FDA00999F3A /* Date.swift */,
+				FBC3332E2BB16FDA00999F3A /* Doble.swift */,
+				FBC3332F2BB16FDA00999F3A /* String.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FBC333302BB16FDA00999F3A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C37A32BB342CA001077D9 /* Button */,
+				FB5C37A02BB32ADB001077D9 /* View */,
+				FBC333312BB16FDA00999F3A /* TableView */,
+				FBC333332BB16FDA00999F3A /* CollectionViewCell */,
+				FBC333352BB16FDA00999F3A /* CollectionView */,
+				FBC333372BB16FDA00999F3A /* TextField */,
+				FBC333392BB16FDA00999F3A /* TableViewCell */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FBC333312BB16FDA00999F3A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333322BB16FDA00999F3A /* TableVew.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FBC333332BB16FDA00999F3A /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333342BB16FDA00999F3A /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FBC333352BB16FDA00999F3A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333362BB16FDA00999F3A /* CollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		FBC333372BB16FDA00999F3A /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333382BB16FDA00999F3A /* TextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		FBC333392BB16FDA00999F3A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3333A2BB16FDA00999F3A /* TableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		FBC333432BB16FFE00999F3A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333442BB16FFE00999F3A /* StoryBoardHelper.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FBC333482BB1897F00999F3A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333492BB1899300999F3A /* OnboardingVC.swift */,
+				FB5C381A2BC3C992001077D9 /* OnboardingVM.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		FBC3334B2BB274DC00999F3A /* HomeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3334E2BB274FF00999F3A /* HomeSearchCell.swift */,
+				FBC3334F2BB274FF00999F3A /* HomeSearchCell.xib */,
+			);
+			path = HomeSearch;
+			sourceTree = "<group>";
+		};
+		FBC333522BB2754500999F3A /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				FBC333532BB2755C00999F3A /* FlightCell.swift */,
+				FBC333542BB2755C00999F3A /* FlightCell.xib */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		FBC333572BB275A200999F3A /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3335A2BB275BD00999F3A /* DealsTableViewCell.swift */,
+				FBC3335B2BB275BD00999F3A /* DealsTableViewCell.xib */,
+			);
+			path = Deals;
+			sourceTree = "<group>";
+		};
+		FBC3335E2BB292CA00999F3A /* HomeFlightGuideModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3335F2BB292EC00999F3A /* HomeFlightGuideModel.swift */,
+			);
+			path = HomeFlightGuideModel;
+			sourceTree = "<group>";
+		};
+		FBFFF56B2BB2FE27009A71E5 /* EmptyCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBFFF56C2BB2FE37009A71E5 /* EmptyCell.swift */,
+				FBFFF56D2BB2FE37009A71E5 /* EmptyCell.xib */,
+			);
+			path = EmptyCell;
+			sourceTree = "<group>";
+		};
+		FBFFF5702BB30062009A71E5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBFFF5712BB3007A009A71E5 /* DynamicTV.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBC332F02BB16B1D00999F3A /* KAYAKAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC333052BB16B1E00999F3A /* Build configuration list for PBXNativeTarget "KAYAKAssignment" */;
+			buildPhases = (
+				FBC332ED2BB16B1D00999F3A /* Sources */,
+				FBC332EE2BB16B1D00999F3A /* Frameworks */,
+				FBC332EF2BB16B1D00999F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAYAKAssignment;
+			productName = KAYAKAssignment;
+			productReference = FBC332F12BB16B1D00999F3A /* KAYAKAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBC332E92BB16B1D00999F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FBC332F02BB16B1D00999F3A = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FBC332EC2BB16B1D00999F3A /* Build configuration list for PBXProject "KAYAKAssignment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBC332E82BB16B1D00999F3A;
+			productRefGroup = FBC332F22BB16B1D00999F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBC332F02BB16B1D00999F3A /* KAYAKAssignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBC332EF2BB16B1D00999F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC333152BB16CB800999F3A /* Auth.storyboard in Resources */,
+				FBC333172BB16CBD00999F3A /* Home.storyboard in Resources */,
+				FBC333012BB16B1E00999F3A /* LaunchScreen.storyboard in Resources */,
+				FBC333512BB274FF00999F3A /* HomeSearchCell.xib in Resources */,
+				FBC3335D2BB275BD00999F3A /* DealsTableViewCell.xib in Resources */,
+				FBC333472BB1896300999F3A /* Onboarding.storyboard in Resources */,
+				FB4BB53B2BB2A6120090BD50 /* RegionSelectionCell.xib in Resources */,
+				FBC333562BB2755C00999F3A /* FlightCell.xib in Resources */,
+				FBC332FE2BB16B1E00999F3A /* Assets.xcassets in Resources */,
+				FBC332FC2BB16B1D00999F3A /* Main.storyboard in Resources */,
+				FBFFF56F2BB2FE37009A71E5 /* EmptyCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBC332ED2BB16B1D00999F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC333452BB16FFE00999F3A /* StoryBoardHelper.swift in Sources */,
+				FBFFF5722BB3007A009A71E5 /* DynamicTV.swift in Sources */,
+				FB4BB5432BB2B9EA0090BD50 /* FlightsVC.swift in Sources */,
+				FBC333552BB2755C00999F3A /* FlightCell.swift in Sources */,
+				FB5C382F2BC3D2D4001077D9 /* DealDataSource.swift in Sources */,
+				FBC333402BB16FDA00999F3A /* CollectionView.swift in Sources */,
+				FB5C38232BC3C9D3001077D9 /* SignUpConfirmVM.swift in Sources */,
+				FB5C381B2BC3C992001077D9 /* OnboardingVM.swift in Sources */,
+				FBC3331A2BB16CFB00999F3A /* HomeSearchVC.swift in Sources */,
+				FB4BB54B2BB2C5120090BD50 /* NotificationVC.swift in Sources */,
+				FBC333502BB274FF00999F3A /* HomeSearchCell.swift in Sources */,
+				FB5C382B2BC3D2B8001077D9 /* FlightDataSource.swift in Sources */,
+				FB4BB5362BB29E700090BD50 /* DealModel.swift in Sources */,
+				FB4BB53A2BB2A6120090BD50 /* RegionSelectionCell.swift in Sources */,
+				FBC333102BB16C4E00999F3A /* RootNC.swift in Sources */,
+				FB5C381D2BC3C9A6001077D9 /* LoginVM.swift in Sources */,
+				FBC3335C2BB275BD00999F3A /* DealsTableViewCell.swift in Sources */,
+				FBC333602BB292EC00999F3A /* HomeFlightGuideModel.swift in Sources */,
+				FB5C383C2BC3E418001077D9 /* FlightSelectionModel.swift in Sources */,
+				FB5C382D2BC3D2C6001077D9 /* RegionDataSource.swift in Sources */,
+				FBC3333F2BB16FDA00999F3A /* CollectionViewCell.swift in Sources */,
+				FB5C38192BC3C989001077D9 /* FlightsVM.swift in Sources */,
+				FBC332F92BB16B1D00999F3A /* ViewController.swift in Sources */,
+				FBC333422BB16FDA00999F3A /* TableViewCell.swift in Sources */,
+				FBC3333E2BB16FDA00999F3A /* TableVew.swift in Sources */,
+				FB5C38282BC3C9FA001077D9 /* HomeVM.swift in Sources */,
+				FB5C38372BC3D32B001077D9 /* DealRepository.swift in Sources */,
+				FB4BB5462BB2BADB0090BD50 /* FlightSelectionVC.swift in Sources */,
+				FBFFF56E2BB2FE37009A71E5 /* EmptyCell.swift in Sources */,
+				FBC333202BB16EF100999F3A /* ProfileVC.swift in Sources */,
+				FB5C38392BC3D34C001077D9 /* HomeFlightRepository.swift in Sources */,
+				FBC3333C2BB16FDA00999F3A /* Doble.swift in Sources */,
+				FBC333272BB16F4200999F3A /* LoginVC.swift in Sources */,
+				FB5C37A22BB32AE6001077D9 /* View+Extension.swift in Sources */,
+				FB5C38312BC3D2F5001077D9 /* HomeFlightDataSource.swift in Sources */,
+				FBC3332B2BB16F6A00999F3A /* SignupConfirmationVC.swift in Sources */,
+				FBC3331E2BB16EE000999F3A /* TripsVC.swift in Sources */,
+				FB5C38172BC3C96B001077D9 /* FlightSelectionVM.swift in Sources */,
+				FB5C38332BC3D30B001077D9 /* FlightRepository.swift in Sources */,
+				FB5C38352BC3D319001077D9 /* RegionRepository.swift in Sources */,
+				FB4BB53E2BB2A6BC0090BD50 /* RegionModel.swift in Sources */,
+				FBC333412BB16FDA00999F3A /* TextField.swift in Sources */,
+				FBC333292BB16F6100999F3A /* EmailFormVC.swift in Sources */,
+				FBC3331C2BB16D2900999F3A /* ExploreVC.swift in Sources */,
+				FBC333132BB16C7E00999F3A /* TabBarVC.swift in Sources */,
+				FBC3334A2BB1899300999F3A /* OnboardingVC.swift in Sources */,
+				FB5C385E2BC40E18001077D9 /* EmailFormVM.swift in Sources */,
+				FBC332F52BB16B1D00999F3A /* AppDelegate.swift in Sources */,
+				FB5C37A52BB342D4001077D9 /* Button+Extension.swift in Sources */,
+				FBC3333D2BB16FDA00999F3A /* String.swift in Sources */,
+				FB4BB5332BB29DCE0090BD50 /* FlightModel.swift in Sources */,
+				FB5C38152BC3C95D001077D9 /* AgencyVM.swift in Sources */,
+				FB5C38262BC3C9E8001077D9 /* NotificationVM.swift in Sources */,
+				FB4BB54E2BB2C74B0090BD50 /* GuideAgencyWebViewVC.swift in Sources */,
+				FBC3333B2BB16FDA00999F3A /* Date.swift in Sources */,
+				FBC332F72BB16B1D00999F3A /* SceneDelegate.swift in Sources */,
+				FB4BB5492BB2C0230090BD50 /* AgencyVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBC332FA2BB16B1D00999F3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBC332FB2BB16B1D00999F3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBC332FF2BB16B1E00999F3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBC333002BB16B1E00999F3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBC333032BB16B1E00999F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBC333042BB16B1E00999F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBC333062BB16B1E00999F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KAYAKAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yati.KAYAKAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBC333072BB16B1E00999F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KAYAKAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yati.KAYAKAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBC332EC2BB16B1D00999F3A /* Build configuration list for PBXProject "KAYAKAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC333032BB16B1E00999F3A /* Debug */,
+				FBC333042BB16B1E00999F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC333052BB16B1E00999F3A /* Build configuration list for PBXNativeTarget "KAYAKAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC333062BB16B1E00999F3A /* Debug */,
+				FBC333072BB16B1E00999F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBC332E92BB16B1D00999F3A /* Project object */;
+}
